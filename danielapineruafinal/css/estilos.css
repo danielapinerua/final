@@ -789,23 +789,34 @@ footer p{
 }
 
 @media (max-width: 767px) {
+    .titulo{
+        font-size: 1.3rem;
+    }
   #panelhamburguesa {
+    font-size: 1rem;
+  }
+    .submenu button.burgir {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 430px){
+.titulo{
     font-size: 1.1rem;
   }
-    .titulo {
-    font-size: 1.5rem;
-    }
 }
-
 @media (max-width: 360px) {
   .titulo {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
     #panelhamburguesa {
     width: 16rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+  .submenu button.burgir {
+    font-size: 0.8rem;
   }
 
   .burgir {
     padding: 1rem;
+}
 }
