@@ -822,6 +822,10 @@ figcaption{
     }
      header{
         padding: 0 0.5rem;
+        height: 8vh;
+    }
+    main{
+        margin-top: 8vh;
     }
 
     .milagro{
