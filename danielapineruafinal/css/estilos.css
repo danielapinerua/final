@@ -804,7 +804,7 @@ footer p{
         font-size: 1.2rem;
     }
     header{
-        padding: 0 0.6rem;
+        padding: 0 0.5rem;
     }
 }
 @media (max-width: 360px) {
