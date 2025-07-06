@@ -807,6 +807,11 @@ figcaption{
 }
 
 @media (max-width: 767px) {
+ 
+
+  body::before {
+    background-attachment: scroll;
+  }
     .titulo{
         font-size: 1.2rem;
     }
