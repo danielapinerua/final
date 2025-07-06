@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinopsis</title>
+      <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./principal/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Rowdies:wght@700&family=Russo+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div id="panelhamburguesa">
+        <a href="./index.html" class="burgir">Inicio</a>
+        <a href="./sinopsis.html" class="burgir">Sinopsis</a>
+        <a href="./locacion.html" class="burgir">Locación</a>
+        <a href="./produccion.html" class="burgir">Producción</a>
+         <div class="submenu">
+     <button onclick="verActores()" class="burgir reparto">Reparto<svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 0 24 24" width="25px" fill="white">
+    <path d="M7 10l5 5 5-5H7z"/></svg></button>
+        <div id="submenuOpciones">
+            <a href="./Actores/agustinpardella.html" class="burgir">Agustin Pardella</a>
+            <a href="./Actores/enzovogrincic.html"class="burgir"> Enzo Vogrincic</a>
+            <a href="./Actores/esteban.html" class="burgir">Esteban Kukurickzka</a>
+            <a href="./Actores/felipe.html" class="burgir">Felipe González Otaño</a>
+            <a href="./Actores/franciscoromero.html" class="burgir">Francisco Romero</a>
+            <a href="./Actores/matiasrecalt.html" class="burgir">Matías Recalt</a>
+            <a href="./Actores/valentinoalonso.html" class="burgir">Valentino Alonso</a>
+        </div>
+         </div>
+
+        <a href="./premios.html" class="burgir">Premios</a>
+        <a href="./datos.html" class="burgir">Datos curiosos</a>
+        <a href="./contacto.html" class="burgir visitar">Contacto</a>
+    </div>
+    <div id="tapado"></div>
+    <header>
+        <h1 class="titulo">La sociedad de la nieve</h1>
+    <nav>
+    <a href="#panelhamburguesa" id="abrir">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                    fill="#e3e3e3">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </a>
+            <a href="#" id="cerrar"> 
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                    fill="#e3e3e3">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+             </a>
+    </nav>
+</header>
+    <main>
+        <section>
+    <h2 id="contacto">Tu voz, parte de esta historia</h2>
+
+    <form method="get" action="./confirmacion.html" class="formulario">
+  <fieldset>
+    <legend><span>Ingresa tus datos</span></legend>
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre" required>
+    <label for="apellido">Apellido:</label>
+    <input type="text" name="apellido" id="apellido" required>
+    <label for="email">Mail:</label>
+    <input type="email" name="usuario" id="email" autocomplete="off" required>
+   <label for="contraseña">Contraseña:</label>
+    <input type="password" name="contraseña" id="contraseña" minlength="6" maxlength="15" required>
+ </fieldset>
+
+  <fieldset>
+    <legend><span>¡Contanos que te pareció la película!</span></legend>
+    <label for="preferencia">¿Cómo la calificarías?</label>
+    <select name="preferencia" id="preferencia" required>
+      <option value="">Elegí una opción</option>
+      <option value="excelente">Excelente</option>
+      <option value="muybuena">Muy buena</option>
+      <option value="buena">Buena</option>
+      <option value="regular">Regular</option>
+      <option value="mala">Mala</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend><span>Dejanos tu mensaje</span></legend>
+    <label for="mensaje">¿Querés dejar una consulta o comentario?</label>
+    <textarea name="mensaje" id="mensaje" cols="30"rows="3" placeholder="Escribí tu comentario/consulta acá"></textarea>
+  </fieldset>
+  <button type="submit">Enviar</button>
+</form>
+</section>
+</main>
+
+   <footer>
+        <p>¡Seguinos en nuestras redes! Y te invitamos a que veas la película </p>
+       <div class="redes">
+        <a href="https://www.instagram.com/lasociedaddelanievehomenaje/" target="_blank"><img src="./principal/instagram-svgrepo-com.svg" alt="Imagen del icono de Instagram."  ></a>
+        <a href="https://www.netflix.com/ar/title/81268316" target="_blank"><img src="./principal/netflix-svgrepo-com.svg" alt="Imagen del logo de Netflix." ></a>
+        <a href="https://www.facebook.com/groups/lasociedaddelanieve/" target="_blank"><img src="./principal/facebook-svgrepo-com.svg" alt="Imagen del logo de Facebook" ></a>
+        </div>
+        <p>Sitio web realizado por Daniela Piñerua para Escuela Da Vinci</p>
+</footer>
+</body>
+<script src="./script.js"></script>
+</html>

@@ -1,0 +1,811 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    }
+
+body::before{
+    content: "";
+    background-image: url(../principal/andes.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+}
+
+body::after{
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: -1;
+}
+
+
+header {
+    background-color: #8BB4D9;
+     width: 100%;
+    display:flex;
+    height: 10vh;
+    position: fixed;
+    z-index: 2000;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    grid-area: header;
+}
+
+.titulo {
+    color: white;
+        font-family: "Rowdies", sans-serif;
+        font-size: 2rem;
+        font-style: normal;
+        text-shadow: 2px 10px 22px rgba(255, 255, 255, 0.973);
+        text-transform: uppercase;
+        margin: 0 auto;
+      }
+      
+nav {
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+    z-index: 999;
+    position: sticky;
+    z-index: 2001;
+}
+
+
+ a {
+text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem;
+    color: white;
+     font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+
+#panelhamburguesa{
+    height: 100vh;
+    width: 25rem;
+    position: fixed;
+    top: 10vh;
+    right: -1000px;
+    transition: right .7s ease;
+    background-color: #8BB4D9;
+    background-size: 100% 100%;
+    border: 2px solid white;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    font-size: 1.4rem;
+    max-height: 90vh;
+     
+}
+
+
+.visitar{
+    text-shadow: 5px 4px 10px black;
+}
+
+
+#panelhamburguesa:target {
+right: 0;
+z-index: 1500;
+}
+
+#cerrar {
+ display: none;
+}
+
+#panelhamburguesa:target ~ header nav #abrir {
+display: none;
+}
+
+#panelhamburguesa:target ~ header nav #cerrar {
+display: inline-block;
+}
+
+ #tapado {
+position: fixed;
+ left: 0;
+  width: 100%;
+ height: 100%;
+ z-index: 1400;
+ background-color: rgba(0, 0, 0, 0);
+ opacity: 0;
+ transition: 1s ease, opacity 0.5s ease;
+ pointer-events: none;
+}
+
+
+#panelhamburguesa:target ~ #tapado {
+opacity: 1;
+background-color: rgba(0, 0, 0, 0.621);
+pointer-events: auto;
+ }
+
+.burgir{
+display: block;
+ padding: 1.5rem;
+  border: solid 1px white;
+
+}
+
+.submenu{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+
+#submenuOpciones{
+   display: none;
+    flex-direction: column;
+    background-color: #5883a6;
+    font-size: 1.2rem;
+
+}
+.submenu button.burgir {
+  text-align: left;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.reparto svg {
+  transition: transform 0.3s ease;
+}
+
+.reparto.abierto svg {
+  transform: rotate(180deg);
+}
+
+nav, main {
+    padding: 1em;
+}
+
+
+main {
+z-index: 1;
+position: relative;
+margin-top: 10vh;
+grid-area: main;
+}
+
+.milagro { 
+display: flex;
+flex-direction: row-reverse;
+align-items:center;
+flex-wrap: wrap;
+width: 90%;
+gap: 2rem;
+margin: 0 auto;
+background-color: rgba(255, 255, 255, 0.707);
+border: 2px solid rgba(173, 173, 173, 0.675);
+border-radius: 10px;
+box-shadow: 0 0 3.5rem rgba(69, 130, 234, 0.644);;
+
+} 
+
+.texto{
+    flex: 2;
+    font-size: 1.5rem;
+    text-indent: 1rem;
+    line-height: 2rem;
+    text-align:left;
+    color: black;
+    margin: 3rem;
+
+}
+
+
+.poster{
+    flex: 1.5;
+   width: 100%;
+    text-align: center;
+}
+
+.poster img {
+   width: 80%;
+   margin: 0 auto ;
+   height: auto;
+   border-radius: 10px;
+   border: 10px solid #3E608C;
+   transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.poster figcaption{
+    margin-top: 1rem;
+}
+
+@font-face {
+    font-family: 'aguafina_scriptregular';
+    src: url('../fuentes1/aguafinascript-regular-webfont.woff2') format('woff2'),
+         url('../fuentes1/aguafinascript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h2,h1{
+    text-align: center;
+    font-size: 3rem;
+   font-family: 'aguafina_scriptregular';
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration-line: underline;
+}
+
+.sinopsiscuadro {
+   display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  width: 80%;
+  padding: 0.6rem;
+  gap: 1rem;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.847);
+  border: 2px solid rgba(173, 173, 173, 0.675);
+  border-radius: 8px;
+}
+
+
+.big{
+    padding: 2rem;
+}
+
+
+.sinopsistexto {
+    width: 40%;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-indent: 0.8rem;
+    color: black;
+    padding: 1rem;
+    flex: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#trailertitulo {
+   font-size: 1.5rem;
+  margin-top: 6.25rem;
+  font-family: 'aguafina_scriptregular';
+    src: url('aguafinascript-regular-webfont.woff2') format('woff2'),
+         url('aguafinascript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 700;
+    font-style: normal;
+  text-decoration-line: underline;
+ text-align: center;
+}
+
+.trailer {
+    width: 100%;
+    padding-bottom: 10rem;
+    flex: 1;
+    background-color:#8bb5d96d;
+    border-radius: 10px;
+    border: 5px solid #8BB4D9;
+
+}
+.trailer iframe{
+    display: block;
+    margin: auto;
+    width: 85%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.mapa{
+    margin: auto;
+    flex: 1;
+     border: 3px solid #7ea0d9;
+   
+}
+.mapa iframe{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+
+}
+#locacion{
+    margin-top: 4.3rem;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1.25rem;
+    margin: auto;
+    width: 90%;;
+}
+
+.columna{
+    width:30%;
+   background-color: #BDD9F2;
+   border-radius: 12px;
+   padding: 1.8rem;
+   transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.columna:hover , article:hover , #oscar:hover , .foto:hover , .milagro img:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 1);
+}
+.mapa2{
+    width: 100%;
+    margin: auto;
+    height: auto;
+    aspect-ratio: 4/3;
+}
+
+.director{
+    width: 100%; 
+    flex: 1;
+    text-align: center;
+    padding: 2%;
+    background-color: #8bb5d93e;
+    border-radius: 10px;
+    margin: auto;
+}
+  
+
+
+.director img {
+    width: 65%; 
+    height: auto; 
+    border-radius: 10px; 
+    border: solid 10px black;
+}
+
+
+figcaption{
+    color: #555;
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+}
+
+
+p {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    text-align: left;
+    color: black;
+    text-indent: 0.6rem;
+}
+
+h3{
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    text-align: center;
+    color: black;
+    margin-top: 2.5rem;
+    text-decoration: underline;
+}
+
+
+
+.contenedor2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+  padding: 1.25rem;
+  margin: auto;
+  width: 90%;;
+}
+
+
+    article {
+  background-color: rgba(255, 255, 255, 0.81);
+  border-radius: 12px;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.size{
+max-width: 21.25rem;
+min-height: 32rem;
+padding: 1.25rem;
+}
+article p{
+    font-size: 0.9rem;
+}
+.imagen{
+  width: 100%;
+  border-radius: 8px;
+  margin: 0.6rem auto;
+}
+
+.imagen img, .imagen iframe{
+    width: 100%;
+  height: auto;
+  object-fit:cover;
+  border: none;
+}
+
+article iframe{
+    height: 5rem;
+}
+
+.imagen figcaption{
+  padding: 0.4rem;
+  font-size: 0.7rem;
+}
+
+
+#oscar {
+  font-size: 1.2rem;
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.137);
+ transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.contenedorimagen{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.foto{
+    width: 25%;
+    aspect-ratio: 4/3;
+  transition: transform 0.5s ease, box-shadow 0.5 ease;
+  border-radius: 15px;
+border: solid 7px black;
+  object-fit: cover;
+  background-color:#bdd9f2;
+  text-align: center;
+}
+
+.foto img{
+    width: 100%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+.foto figcaption {
+  padding: 0.3rem;
+  color: black;
+}
+
+article a, .sinopsistexto a{
+    all: unset;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #3E608C;
+}
+article a:hover , .sinopsistexto a:hover{
+    color: rgb(77, 76, 76);
+
+}
+article a:focus , .sinopsistexto a:focus{
+    outline: 3px solid rgb(52, 52, 97);
+}
+
+article a:visited , .sinopsistexto a:visited{
+    color: rgb(154, 14, 14);
+}
+
+.grande{
+    width: 29%;
+    min-height: 29.5rem;
+    border: 2px solid #7ea0d9;
+    padding: 0.8rem;
+    box-sizing: border-box;
+}
+
+.grande p{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    
+}
+#sub{
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+      
+
+ul {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+    color: black;
+}
+
+
+.alto figure{
+ margin-bottom: 1rem;
+
+}
+.alto figcaption{
+    font-size: 0.9rem;
+}
+
+.cuadromensaje{
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.64);
+    width: 90%;
+    max-width: 31.8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.cuadromensaje img , .confirmacion img{
+    width: 2.5rem;
+    border: solid 5px black;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.cuadromensaje img:hover , .confirmacion img:hover{
+    transform: scale(1.1);
+}
+
+
+.cuadromensaje img{
+    display: block;
+    margin: auto;
+}
+.cuadromensaje p:first-of-type{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.formulario{
+    width: 80%;
+    max-width: 37.5rem;
+    margin: auto;
+    color: white ;
+    background-color: #0E2F59;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem 1.25rem rgba(27, 27, 27, 0.1);
+}
+
+.formulario fieldset{
+    border: 3px solid #BDD9F2;
+    border-radius: 8px;
+     padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+.formulario legend{
+    margin: auto;
+}
+.formulario legend span{
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    color: #0c274a;
+    font-style: normal;
+    text-align: center;
+    background-color: white;
+    font-size: 1.25rem;
+    padding: 0.6rem;
+    width: 100%;
+    border-radius: 8px;
+    
+}
+
+.formulario span{
+    display: block;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.formulario label {
+  display: block;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.formulario input, .formulario select, .formulario textarea {
+  width: 95%;
+  padding: 0.5rem;
+  border: 2px solid #7ea0d9;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.045);
+  color: #f0f4f8;
+  transition: background-color 0.5s ease;
+}
+
+
+::placeholder{
+    color: white;
+}
+
+.formulario select:hover,.formulario textarea:hover, .formulario input:hover {
+  background-color: rgba(86, 57, 214, 0.093);
+}
+.formulario button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  background: #5a81d1;
+  color: #e0e7ff;
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  
+}
+.formulario button[type="submit"]:hover {
+  background-color: #5c6fb8;
+  box-shadow: 0 0.30rem 1rem rgba(100, 120, 200, 0.5);
+}
+.formulario select option {
+    background-color: blueviolet;
+}
+
+.confirmacion {
+  width: 70%;
+  max-width: 50rem;       
+  margin-left: auto; 
+  margin-right: auto;     
+  padding: 1.25rem;     
+  background-color: rgba(255, 255, 255, 0.614); 
+  border-radius: 12px;    
+  border: 3px solid #ccccccd5;
+  box-shadow: 0 0.8rem 1rem rgba(16, 16, 16, 0.1); 
+  line-height: 1.5;     
+}
+
+.confirmacion p { 
+  font-size: 1.2rem   
+}
+
+.confirmacion em {
+  color: #575757;            
+}
+
+.confirmacion p:first-of-type{
+    font-size: 1.5rem;
+}
+
+      
+footer {
+    background-color: #0E2F59;
+    z-index: 1;
+    grid-area: footer;
+}
+
+
+footer p{
+    color: white;
+    margin: 0.8rem;
+     font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.redes{
+    justify-content: center;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.redes img{
+    width: 3rem;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.4s;
+    filter: invert(1);
+    border: none;
+}
+
+.redes img:hover{
+    transform: scale(1.1)
+}
+
+@media (max-width: 1024px) {
+     .titulo {
+    font-size: 1.7rem;
+  }
+
+
+    #panelhamburguesa {
+    width: 20rem;
+    font-size: 1.2rem;
+  }
+    .burgir{
+        padding: 1.1rem ;
+    }
+ 
+
+.submenu button.burgir {
+  font-size: 1.2rem;
+ padding: 0.8rem;
+
+  }
+   #submenuOpciones a{
+    padding: 0.8rem;
+    font-size: 1rem;
+   }
+
+}
+
+@media (max-width: 767px) {
+  #panelhamburguesa {
+    font-size: 1.1rem;
+  }
+    .titulo {
+    font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+  .titulo {
+    font-size: 1.2rem;
+  }
+    #panelhamburguesa {
+    width: 16rem;
+    font-size: 1rem;
+  }
+
+  .burgir {
+    padding: 1rem;
+}
