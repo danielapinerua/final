@@ -790,7 +790,7 @@ footer p{
 
 @media (max-width: 767px) {
     .titulo{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
   #panelhamburguesa {
     font-size: 1rem;
@@ -799,7 +799,11 @@ footer p{
     font-size: 1rem;
   }
 }
-
+@media (max-width: 430px){
+    .titulo{
+        font-size: 1.2rem;
+    }
+}
 @media (max-width: 360px) {
   .titulo {
     font-size: 0.9rem;
