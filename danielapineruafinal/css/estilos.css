@@ -185,6 +185,7 @@ width: 100%;
 
 .reparto svg {
   transition: transform 0.3s ease;
+  vertical-align: middle;
 }
 
 .reparto.abierto svg {
