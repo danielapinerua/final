@@ -833,9 +833,11 @@ figcaption{
         padding: 1rem;
          margin: 0;
     }
+    .poster{
+        width: 80%;
+    }
     .poster img{
         width: 70%;
-        
   }
     h1,h2{
         font-size: 1.8rem;
