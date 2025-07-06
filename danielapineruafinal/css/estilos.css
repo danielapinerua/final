@@ -233,7 +233,7 @@ box-sizing: border-box;
 
 .poster{
     flex: 1.5;
-   width: 100%;
+   width: 90%;
     text-align: center;
 }
 
@@ -247,7 +247,7 @@ box-sizing: border-box;
 }
 
 .poster figcaption{
-    margin-top: 1rem;
+    margin-top: 0.7rem;
 }
 
 @font-face {
@@ -785,20 +785,23 @@ footer p{
     font-size: 1rem;
    }
 .texto{
-    font-size: 1.3rem;
-    margin: 2rem;
+    font-size: 0.9rem;
+    margin: 1.5rem;
 }
 .poster img{
-    width: 90%;
+    width: 95%;
 }
 
 h1,h2 {
 font-size: 2.3rem;
 }
 p{
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
+}
+figcaption{
+    font-size: 0.7rem;
 }
 
 @media (max-width: 767px) {
@@ -818,21 +821,21 @@ p{
     .milagro{
         flex-direction: column;
         margin: 0 auto;
-        width: 80%;
+        width: 100%;
+        gap: 1rem;
+        align-items: center;
+
     }
 
     .texto{
-        width: 80%;
+        width: 75%;
         font-size: 0.3rem;
         padding: 1rem;
-        margin: 0;
-        text-align: center;
+         margin: 0;
     }
-
     .poster img{
         width: 70%;
-        display: block;  
-        margin: 0 auto;
+        
   }
     h1,h2{
         font-size: 1.8rem;
