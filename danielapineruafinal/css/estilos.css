@@ -864,7 +864,7 @@ figcaption{
     width: 90%;
   }
     .size {
-    width: 25rem;
+    width: 22rem;
     min-height: 30rem;
     padding: 1rem;
   }
@@ -880,6 +880,9 @@ figcaption{
   }
   h3{
     font-size: 1rem;
+  }
+  .size{
+
   }
 
 }
@@ -977,6 +980,9 @@ figcaption{
    .imagen figcaption {
     font-size: 0.6rem;
   }
+  .contenedor2{
+    flex-direction: column;
+  }
   article p {
     font-size: 0.8rem;
   }
@@ -988,9 +994,18 @@ figcaption{
     font-size: 0.9rem;
   }
 
+  article{
+    margin: auto;
+  }
+
+  .size{
+    width: 85%;
+  }
+  }
+
   
 
-}
+
 
        
     
@@ -1025,8 +1040,6 @@ p{
     font-size: 1.1rem;
   }
 
-  .size{
-    width: 15rem;
-  }
+  
 
 }
