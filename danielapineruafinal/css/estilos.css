@@ -865,7 +865,6 @@ figcaption{
   }
     .size {
     width: 22rem;
-    min-height: 30rem;
     padding: 1rem;
   }
 
@@ -881,9 +880,7 @@ figcaption{
   h3{
     font-size: 1rem;
   }
-  .size{
-
-  }
+ 
 
 }
 
@@ -992,6 +989,7 @@ figcaption{
 
   #oscar{
     font-size: 0.9rem;
+    width: 80%;
   }
 
   article{
@@ -999,7 +997,17 @@ figcaption{
   }
 
   .size{
-    width: 85%;
+    width: 80%;
+    min-height: 15rem;
+  }
+
+  .imagen{
+  margin: auto;
+}
+
+  .imagen img{
+    object-fit: contain;
+    height: auto;
   }
   }
 
