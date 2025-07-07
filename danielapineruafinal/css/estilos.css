@@ -398,7 +398,7 @@ h2,h1{
 
 
 .director img {
-    width: 65%; 
+    width: 70%; 
     height: auto; 
     border-radius: 10px; 
     border: solid 10px black;
@@ -837,6 +837,12 @@ figcaption{
     padding: 1.2rem;
    
 }
+
+
+  .director img {
+    width: 90%;
+  }
+}
 @media (max-width: 767px) {
 
     .titulo{
@@ -906,7 +912,6 @@ figcaption{
     padding: 0.7rem 0;
   }
 
-
   .columna {
     width: 85%;
     padding: 1rem;
@@ -919,8 +924,17 @@ figcaption{
   #locacion{
     margin-top: 1.2rem;
 }
+  .director {
+    width: 90%;
+  }
+
+  .director img {
+    width: 75%;
+  }
+}
+
        
-    }
+    
 
 @media (max-width: 360px) {
   .titulo {
