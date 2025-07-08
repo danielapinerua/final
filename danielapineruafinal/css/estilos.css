@@ -575,8 +575,9 @@ article a:visited , .sinopsistexto a:visited{
 
 
 .grande{
-    width: 29%;
-    min-height: 29.5rem;
+    width: 45%;
+    max-width: 30rem;
+    height: 23.5rem;
     border: 2px solid #7ea0d9;
     padding: 0.8rem;
     box-sizing: border-box;
@@ -884,7 +885,7 @@ figcaption{
 
     .grande {
     width: 45%;
-    min-height: 25rem;
+    height: 27rem;
   }
 
   .grande p {
@@ -1025,7 +1026,7 @@ figcaption{
   }
     .grande {
     width: 85%;
-    min-height: auto;
+    height: auto;
   }
 
   .grande p {
