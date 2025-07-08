@@ -279,7 +279,7 @@ h2,h1{
   padding: 0.6rem;
   gap: 1rem;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.847);
+  background-color: rgba(255, 255, 255, 0.784);
   border: 2px solid rgba(173, 173, 173, 0.675);
   border-radius: 8px;
 }
@@ -451,7 +451,7 @@ h3{
 
 
     article {
-  background-color: rgba(255, 255, 255, 0.81);
+  background-color: rgba(255, 255, 255, 0.954);
   border-radius: 12px;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
   box-sizing: border-box;
