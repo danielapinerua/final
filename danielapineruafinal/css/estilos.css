@@ -906,6 +906,16 @@ figcaption{
   .alto figcaption {
     font-size: 0.85rem;
 }
+ .foto {
+    width: 33%;
+   
+  }
+
+  
+  .foto figcaption {
+    font-size: 0.7rem;
+  }
+}
 
 
 @media (max-width: 767px) {
@@ -1048,10 +1058,28 @@ figcaption{
     max-height: 15rem;
     width: 100%;
 }
-  
+  .contenedorimagen {
+    flex-direction: column;
+    align-items: center;
+  }
 
-  
+  .foto {
+    width: 80%;
+    margin: auto;
+    aspect-ratio: auto;
+  }
+
+  .foto img {
+    height: auto;
+  }
+
+  #sub{
+    font-size: 1.3rem;
+  }
+ 
 }
+
+
 
 
   
