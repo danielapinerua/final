@@ -38,7 +38,7 @@ body::after{
     left: 0;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     z-index: -1;
 }
@@ -573,6 +573,7 @@ article a:visited , .sinopsistexto a:visited{
     color: rgb(154, 14, 14);
 }
 
+
 .grande{
     width: 29%;
     min-height: 29.5rem;
@@ -880,9 +881,22 @@ figcaption{
   h3{
     font-size: 1rem;
   }
+
+    .grande {
+    width: 45%;
+    min-height: 25rem;
+  }
+
+  .grande p {
+    font-size: 1.05rem;
+    line-height: 1.5rem;
+  }
+}
+
+
  
 
-}
+
 
 @media (max-width: 767px) {
 
@@ -1009,7 +1023,17 @@ figcaption{
     object-fit: contain;
     height: auto;
   }
+    .grande {
+    width: 85%;
+    min-height: auto;
   }
+
+  .grande p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+}
+
 
   
 
@@ -1046,6 +1070,15 @@ p{
 
   #trailertitulo {
     font-size: 1.1rem;
+  }
+  .grande {
+    width: 90%;
+    padding: 0.6rem;
+  }
+
+  .grande p {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
   }
 
   
