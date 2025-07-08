@@ -476,7 +476,6 @@ article p{
   width: 100%;
   height: 15rem;
   object-fit:cover;
-  border: none;
 }
 article iframe{
     width: 100%;
@@ -505,7 +504,7 @@ article iframe{
 
 
 .imagen figcaption{
-  padding: 0.4rem;
+  padding: 0.3rem;
   font-size: 0.7rem;
 }
 
@@ -601,8 +600,18 @@ ul {
     font-size: 0.8rem;
     color: black;
 }
-
-
+.alto{
+  width: 30%;
+  max-width: 26rem;
+  height: 24rem;
+  border: 4px solid #35496b;
+  padding: 0.8rem;
+    box-sizing: border-box;
+}
+.alto img{
+  object-fit: contain;
+  height: 100%;
+}
 .alto figure{
  margin-bottom: 1rem;
 
@@ -888,15 +897,15 @@ figcaption{
     height: 27rem;
   }
 
-  .grande p {
-    font-size: 1.05rem;
-    line-height: 1.5rem;
-  }
-}
-
-
  
+   .alto {
+    width: 45%;
+    height: 22rem;
+  }
 
+  .alto figcaption {
+    font-size: 0.85rem;
+}
 
 
 @media (max-width: 767px) {
@@ -1029,10 +1038,19 @@ figcaption{
     height: auto;
   }
 
-  .grande p {
-    font-size: 1rem;
-    line-height: 1.4rem;
+  .alto {
+    width: 85%;
+    height: auto;
   }
+
+  .alto img {
+    height: auto;
+    max-height: 15rem;
+    width: 100%;
+}
+  
+
+  
 }
 
 
@@ -1082,6 +1100,11 @@ p{
     line-height: 1.3rem;
   }
 
-  
+   .alto {
+    width: 90%;
+    padding: 0.5rem;
+  }
 
+
+}
 }
