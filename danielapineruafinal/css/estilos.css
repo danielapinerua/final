@@ -223,7 +223,7 @@ box-sizing: border-box;
     flex: 2;
     font-size: 1.5rem;
     text-indent: 1rem;
-    line-height: 2rem;
+    line-height: 1.8;
     text-align:left;
     color: black;
     margin: 1rem;
@@ -292,7 +292,7 @@ h2,h1{
 
 .sinopsistexto {
     width: 40%;
-    line-height: 1.4rem;
+    line-height: 1.4;
     text-indent: 0.8rem;
     color: black;
     padding: 1rem;
@@ -747,7 +747,7 @@ ul {
   border-radius: 12px;    
   border: 3px solid #ccccccd5;
   box-shadow: 0 0.8rem 1rem rgba(16, 16, 16, 0.1); 
-  line-height: 1.5rem;     
+  line-height: 1.5;     
 }
 
 .confirmacion p { 
@@ -840,7 +840,7 @@ font-size: 2.3rem;
 }
 p{
     font-size: 1rem;
-    line-height: 1.4rem;
+    line-height: 1.4;
 
 }
 figcaption{
@@ -930,7 +930,7 @@ figcaption{
 
 .confirmacion p:first-of-type{
     font-size: 1.3rem;
-    line-height: 1.4rem;
+    line-height: 1.4;
 
 }
 
@@ -984,7 +984,7 @@ figcaption{
     }
     p{
         font-size: 1rem;
-        line-height: 1.3rem;
+        line-height: 1.3;
      }
 
     .sinopsiscuadro {
@@ -1191,7 +1191,7 @@ p{
 
   .grande p {
     font-size: 0.9rem;
-    line-height: 1.3rem;
+    line-height: 1.3;
   }
 
    .alto {
