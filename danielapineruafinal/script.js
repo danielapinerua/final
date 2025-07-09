@@ -4,10 +4,10 @@ function verActores() {
 
   if (submenu.style.display === "flex") {
     submenu.style.display = "none";
-    boton.classList.remove("abierto");
+      flecha.style.transform = "rotate(0deg)";
   } else {
     submenu.style.display = "flex";
-    boton.classList.add("abierto");
+    flecha.style.transform = "rotate(180deg)";
   }
 }
   function mostrarSpotify() {

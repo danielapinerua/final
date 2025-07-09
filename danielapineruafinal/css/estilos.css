@@ -183,14 +183,11 @@ width: 100%;
 }
 
 
-.reparto svg {
+#flecha {
   transition: transform 0.3s ease;
   vertical-align: middle;
 }
 
-.reparto.abierto svg {
-  transform: rotate(180deg);
-}
 
 nav, main {
     padding: 1em;
@@ -819,7 +816,7 @@ footer p{
  
 .submenu button.burgir {
   font-size: 1.2rem;
- padding: 0.8rem;
+ padding: 1rem;
 
   }
    #submenuOpciones a{
@@ -1019,7 +1016,7 @@ figcaption{
 
   #locacion{
     margin-top: 1.2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
   .director {
     width: 90%;
