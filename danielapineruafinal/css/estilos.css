@@ -651,7 +651,7 @@ ul {
 
 
 .formulario{
-    width: 80%;
+    width: 85%;
     max-width: 37.5rem;
     margin: auto;
     color: white ;
@@ -1136,7 +1136,7 @@ figcaption{
 }
 .formulario label {
   margin-top: 1rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 ::placeholder{
@@ -1154,7 +1154,6 @@ figcaption{
 .confirmacion p:first-of-type{
     font-size: 1.1rem;
 }
-
 
 
 }
@@ -1229,7 +1228,6 @@ p{
 
   .formulario label {
    margin-top: 0.8rem;
-    font-size: 0.8rem;
   }
 
   ::placeholder{
