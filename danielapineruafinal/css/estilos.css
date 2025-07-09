@@ -613,11 +613,11 @@ ul {
   height: 100%;
 }
 .alto figure{
- margin-bottom: 1rem;
+ margin-bottom: 0.5rem;
 
 }
 .alto figcaption{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .cuadromensaje{
@@ -904,7 +904,7 @@ figcaption{
   }
 
   .alto figcaption {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
  .foto {
     width: 33%;
