@@ -582,7 +582,6 @@ article a:visited , .sinopsistexto a:visited{
 .grande p{
     font-size: 1.2rem;
     line-height: 1.6rem;
-    
 }
 #sub{
     margin-top: 5%;
@@ -893,7 +892,11 @@ figcaption{
 
     .grande {
     width: 45%;
-    height: 34.5rem;
+    height: 30.5rem;
+  }
+  .grande p{
+    font-size: 1.1rem;
+    line-height: 1.5;
   }
 
  
@@ -1068,6 +1071,11 @@ figcaption{
     width: 85%;
     height: auto;
   }
+
+  .grande p{
+    font-size: 1rem;
+    line-height: 1.4;
+}
 
   .alto {
     width: 85%;
