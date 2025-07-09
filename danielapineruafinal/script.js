@@ -20,7 +20,7 @@ function verActores() {
   var columna1 = document.getElementById("columna1");
   var columna2 = document.getElementById("columna2");
 
-  cuadro.style.backgroundColor = "#BDD9F2"; 
+  cuadro.style.backgroundColor = "#b9d8f3"; 
   mapa.style.border = "3px solid white";
   columna1.style.backgroundColor = "white";
   columna2.style.backgroundColor = "white";
