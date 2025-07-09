@@ -337,7 +337,7 @@ h2,h1{
 #mapa{
     margin: auto;
     flex: 1;
-    border: 3px solid #7ea0d9;
+    border: 4px solid #7ea0d9;
     aspect-ratio: 4/3;
     overflow: hidden;
    

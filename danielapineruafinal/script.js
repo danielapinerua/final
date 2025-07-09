@@ -21,7 +21,7 @@ function verActores() {
   var columna2 = document.getElementById("columna2");
 
   cuadro.style.backgroundColor = "#b9d8f3"; 
-  mapa.style.border = "3px solid white";
+  mapa.style.border = "4px solid white";
   columna1.style.backgroundColor = "white";
   columna2.style.backgroundColor = "white";
 }
