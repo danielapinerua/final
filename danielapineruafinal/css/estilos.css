@@ -791,6 +791,9 @@ footer p{
   font-style: normal;
   font-size: 1rem;
 }
+footer p:last-of-type{
+  font-size: 0.9rem;
+}
 
 .redes{
     justify-content: center;
@@ -957,6 +960,10 @@ figcaption{
   footer p{
     font-size: 0.9rem;
   }
+  footer p:last-of-type{
+    font-size: 0.8rem;
+  }
+
 
 
 }
@@ -1190,6 +1197,9 @@ figcaption{
     font-size: 0.8rem;
     margin: 0.5rem;
   }
+
+  footer p:last-of-type{
+font-size: 0.7rem;
 
 
 }
