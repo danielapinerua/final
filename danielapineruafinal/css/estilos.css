@@ -1013,11 +1013,14 @@ figcaption{
   .mapa {
     margin: 1rem 0.5rem;
   }
-
   #locacion{
     margin-top: 1.2rem;
-    font-size: 1.3rem;
 }
+
+.otras{
+  font-size: 1.5rem;
+}
+
   .director {
     width: 90%;
     padding: 0.8rem 0;
