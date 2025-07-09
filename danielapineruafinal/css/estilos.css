@@ -789,6 +789,7 @@ footer p{
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  font-size: 1rem;
 }
 
 .redes{
@@ -946,6 +947,17 @@ figcaption{
     line-height: 1.4;
 
 }
+ .redes {
+    gap: 1.5rem;
+  }
+
+  .redes img {
+    width: 2.5rem;
+  }
+  footer p{
+    font-size: 0.9rem;
+  }
+
 
 }
 
@@ -1167,6 +1179,17 @@ figcaption{
 .confirmacion p:first-of-type{
     font-size: 1.1rem;
 }
+.redes{
+  gap: 1rem;
+}
+  .redes img {
+    width: 2rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    margin: 0.5rem;
+  }
 
 
 }
