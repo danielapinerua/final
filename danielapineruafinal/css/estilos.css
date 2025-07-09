@@ -337,16 +337,16 @@ h2,h1{
 #mapa{
     margin: auto;
     flex: 1;
-    height: auto;
     border: 3px solid #7ea0d9;
     aspect-ratio: 4/3;
-
+    overflow: hidden;
    
 }
 #mapa iframe{
     width: 100%;
     height: 100%;
     display: block;
+    border: none;
 }
 
 
