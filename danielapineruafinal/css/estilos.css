@@ -852,7 +852,7 @@ footer p:last-of-type{
     width: 95%;
 }
 
-h1,h2 {
+h1,h2 , #titulo1{
 font-size: 2.3rem;
 }
 p{
@@ -1012,7 +1012,7 @@ figcaption{
     .poster img{
         width: 80%;
   }
-    h1,h2{
+    h1,h2, #titulo1{
         font-size: 1.8rem;
     }
     p{
@@ -1050,7 +1050,7 @@ figcaption{
     margin: 1rem 0.5rem;
   }
  
-.botoncolor{
+.botoncolor , .texto2 button{
   font-size: 0.8rem;
 }
 .otras{
