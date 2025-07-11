@@ -592,9 +592,9 @@ border: solid 7px black;
 
 
 .foto figcaption {
-  padding: 0.3rem;
+  padding: 0.5rem;
   color: black;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }
 
 article a, .sinopsistexto a{
@@ -632,6 +632,7 @@ article a:visited , .sinopsistexto a:visited{
 #sub{
     margin-top: 5%;
     margin-bottom: 3%;
+    font-size: 2.5rem;
 }
       
 
