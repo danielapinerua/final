@@ -1,14 +1,8 @@
 function verActores() {
-  var submenu = document.getElementById("submenuOpciones");
-  var boton = document.querySelector(".reparto");
-
-  if (submenu.style.display === "flex") {
-    submenu.style.display = "none";
-      flecha.style.transform = "rotate(0deg)";
-  } else {
-    submenu.style.display = "flex";
-    flecha.style.transform = "rotate(180deg)";
-  }
+ var submenu = document.getElementById("submenuOpciones");
+  var flecha = document.getElementById("flecha")
+  submenu.style.display = "flex";
+  flecha.style.transform = "rotate(180deg)";
 }
   function mostrarSpotify() {
     var cancion = document.getElementById("spotify");
@@ -35,7 +29,7 @@ function mostrarBiografiaEnzo() {
 }
 function mostrarBiografiaEsteban() {
  var biografia = document.getElementById("biografiaEsteban");
- biografia.textContent = "Esteban Kukuriczka nació el 19 de marzo de 1991 en Lanús, Buenos Aires. Es egresado de la Licenciatura en Actuación en la UNA. En teatro actuó en Parias, La crueldad de los animales, Me duele una mujer, Única, Nuestra primera última vez , Presentes, entre otras obras. En cine actuó en La sociedad de la nieve, Betibú, Eliana , A donde quieras , Habitación disponible y Federica.";
+ biografia.textContent = "Esteban Kukuriczka nació el 19 de marzo de 1991 en Lanús, Buenos Aires. Es egresado de la Licenciatura en Actuación en la UNA. En teatro actuó en Parias, La crueldad de los animales, Me duele una mujer, Única, Nuestra primera última vez, Presentes, entre otras obras. En cine actuó en La sociedad de la nieve, Betibú, Eliana , A donde quieras , Habitación disponible y Federica.";
 }
 function mostrarBiografiaFelipe() {
  var biografia = document.getElementById("biografiaFelipe");
