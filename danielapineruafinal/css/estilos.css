@@ -326,7 +326,7 @@ h2,h1{
   border-radius: 10px;
   cursor: pointer;
   display: block;
-  margin: 0.7rem auto;
+  margin: 0.4rem auto;
   transition: background-color 0.5s;
 }
 
@@ -887,7 +887,7 @@ figcaption{
   }
 
   .trailer {
-    padding-bottom: 8rem;
+   padding-bottom: 4rem ;
   }
 
   .trailer iframe {
@@ -1055,7 +1055,7 @@ figcaption{
   }
 
   .trailer {
-    padding: 0.7rem 0;
+    padding: 0.8rem 0;
   }
 
   .columna {
@@ -1070,10 +1070,7 @@ figcaption{
 .botoncolor , .texto2 button , .confirmacion button, .trailer button{
   font-size: 0.8rem;
 }
-.trailer button{
-  margin: 0.5rem auto;
 
-}
 .otras{
   font-size: 1.5rem;
 }
@@ -1184,7 +1181,7 @@ figcaption{
     padding: 0.3rem;
   
     }
-  .formulario button[type="submit"] {
+.formulario button[type="submit"] {
     font-size: 1rem;
     padding: 0.6rem;
 }
