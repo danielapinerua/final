@@ -56,3 +56,7 @@ function mostrarTrailer() {
   var video = document.getElementById("trailervideo");
   video.innerHTML = '<iframe src="https://www.youtube.com/embed/l9tP4M8URhQ?si=lbfgofjs4FNnJaS1" title="YouTube video player" frameborder="0" allowfullscreen loading="lazy"></iframe>';
 }
+function mostrarOscar() {
+  var mensaje = document.getElementById("oscar");
+  mensaje.textContent = "La Sociedad de la Nieve fue seleccionada para representar a España y llegó a estar entre las cinco películas finalistas en la categoría Mejor Película Internacional en los Premios Óscar 2024.";
+}
