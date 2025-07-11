@@ -555,6 +555,13 @@ article iframe{
   background-color: #fcf6f6;
 }
 
+#botonOscar svg{
+  vertical-align: middle;
+   margin-right: 0.4rem;
+}
+
+
+
 .contenedorimagen{
   display: flex;
   flex-wrap: wrap;
@@ -1109,6 +1116,7 @@ figcaption{
   article p {
     font-size: 0.8rem;
   }
+  
   ul{
     font-size: 0.7rem;
   }
@@ -1125,6 +1133,11 @@ figcaption{
   .size{
     width: 80%;
     min-height: 15rem;
+    padding: 0.8rem;
+  }
+
+  h3{
+    font-size: 0.9rem;
   }
 
   .imagen{
@@ -1237,7 +1250,7 @@ figcaption{
   footer p:last-of-type{
 font-size: 0.7rem;
 
-
+}
 }
 
 
@@ -1272,6 +1285,10 @@ p{
 
   #trailertitulo {
     font-size: 1.1rem;
+  }
+
+  article{
+    padding: 0.5rem;
   }
   .grande {
     width: 90%;
