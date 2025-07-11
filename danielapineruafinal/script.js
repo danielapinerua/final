@@ -58,3 +58,7 @@ function mostrarMensaje() {
   var mensaje = document.getElementById("mensajeExtra");
   mensaje.textContent = "En lo alto de aquellas montañas no solo hubo nieve y silencio, también hubo fuerza, amistad y esperanza. Gracias por sumar tu voz a esta historia que aún sigue conmoviendo.";
 }
+function mostrarTrailer() {
+  var caja = document.getElementById("trailervideo");
+  caja.innerHTML = '<iframe src="https://www.youtube.com/embed/l9tP4M8URhQ?si=lbfgofjs4FNnJaS1" title="YouTube video player" frameborder="0" allowfullscreen loading="lazy"></iframe>';
+}
