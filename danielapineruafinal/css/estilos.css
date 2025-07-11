@@ -330,7 +330,7 @@ h2,h1{
   transition: background-color 0.5s;
 }
 
-.botontrailer:hover {
+.trailer button:hover {
   background-color: #0E2F59;
   color: white;
 }

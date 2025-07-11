@@ -11,8 +11,8 @@ function verActores() {
   }
 }
   function mostrarSpotify() {
-    var caja = document.getElementById("spotify");
-    caja.innerHTML = '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/25vto1XDKIDTzqxBUi7U32?utm_source=generator" width="100%" height="80" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
+    var cancion = document.getElementById("spotify");
+    cancion.innerHTML = '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/25vto1XDKIDTzqxBUi7U32?utm_source=generator" width="100%" height="80" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
   }
   function cambiarColores() {
   var cuadro = document.getElementById("cuadro");
@@ -59,6 +59,6 @@ function mostrarMensaje() {
   mensaje.textContent = "En lo alto de aquellas montañas no solo hubo nieve y silencio, también hubo fuerza, amistad y esperanza. Gracias por sumar tu voz a esta historia que aún sigue conmoviendo.";
 }
 function mostrarTrailer() {
-  var caja = document.getElementById("trailervideo");
-  caja.innerHTML = '<iframe src="https://www.youtube.com/embed/l9tP4M8URhQ?si=lbfgofjs4FNnJaS1" title="YouTube video player" frameborder="0" allowfullscreen loading="lazy"></iframe>';
+  var video = document.getElementById("trailervideo");
+  video.innerHTML = '<iframe src="https://www.youtube.com/embed/l9tP4M8URhQ?si=lbfgofjs4FNnJaS1" title="YouTube video player" frameborder="0" allowfullscreen loading="lazy"></iframe>';
 }
