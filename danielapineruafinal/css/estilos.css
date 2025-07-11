@@ -544,7 +544,7 @@ article iframe{
   color: #0E2F59; 
   border: 2px solid #0E2F59;
   border-radius: 10px;
-  padding: 0.6rem 1rem;
+  padding: 0.7rem;
   font-size: 1rem;
   font-family: "Russo One", sans-serif;
   cursor: pointer;
@@ -558,7 +558,6 @@ article iframe{
 
 #botonOscar svg{
   vertical-align: middle;
-   margin-right: 0.4rem;
 }
 
 
