@@ -106,6 +106,9 @@ text-decoration: none;
     overflow: auto;
     font-size: 1.4rem;
     max-height: 90vh;
+     width: 85vw;
+     max-width: 25rem;
+    
      
 }
 
@@ -260,8 +263,6 @@ h2,h1{
     text-align: center;
     font-size: 3rem;
    font-family: 'aguafina_scriptregular';
-    font-weight: normal;
-    font-style: normal;
     font-weight: 700;
     font-style: normal;
     text-decoration-line: underline;
@@ -872,7 +873,6 @@ footer p:last-of-type{
   }
 
     #panelhamburguesa {
-    width: 20rem;
     font-size: 1.2rem;
   }
     .burgir{
@@ -1046,7 +1046,6 @@ figcaption{
 
     .texto{
         width: 75%;
-        font-size: 0.3rem;
         padding: 1rem;
          margin: 0;
     }
@@ -1256,16 +1255,14 @@ font-size: 0.7rem;
 }
 }
 
-
-       
-    
+  
 
 @media (max-width: 360px) {
   .titulo {
     font-size: 0.8rem;
   }
     #panelhamburguesa {
-    width: 16rem;
+    width: 90vw;
     font-size: 0.8rem;
   }
   .submenu button.burgir {
@@ -1276,7 +1273,7 @@ font-size: 0.7rem;
     padding: 1rem;
 }
 .texto{
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 h1,h2{
     font-size: 1.5rem;
