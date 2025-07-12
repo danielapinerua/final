@@ -525,15 +525,15 @@ article iframe{
   border-radius: 12px;
   padding: 1rem 1.25rem;
   line-height: 1.3;
-  width: 80%;
+  width: 85%;
   text-align: center;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.137);
-  margin: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 .contenedoroscar{
   width: 100%;
   text-align: center;
-  margin-top: 1rem;
 }
 #botonOscar{
   display: block;
