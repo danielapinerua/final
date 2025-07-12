@@ -105,7 +105,7 @@ text-decoration: none;
     overflow: auto;
     font-size: 1.4rem;
     max-height: 90vh;
-    width: 85vw;
+    width: 80vw;
    max-width: 25rem;
 }
 
@@ -906,10 +906,6 @@ figcaption{
     font-size: 0.7rem;
 }
 
-  #trailertitulo {
-    font-size: 1.3rem;
-    margin-top: 4rem;
-  }
 
   .trailer {
    padding-bottom: 4rem ;
@@ -1057,7 +1053,6 @@ figcaption{
         font-size: 1.8rem;
     }
     p{
-        font-size: 1rem;
         line-height: 1.3;
      }
 
@@ -1073,10 +1068,6 @@ figcaption{
     padding: 0.8rem;
   }
 
-  #trailertitulo {
-    font-size: 1.2rem;
-    margin: auto;
-  }
 
   .trailer {
     padding: 0.8rem 0;
@@ -1260,7 +1251,7 @@ font-size: 0.7rem;
     font-size: 0.8rem;
   }
     #panelhamburguesa {
-    width: 90vw;
+    width: 85vw;
     font-size: 0.8rem;
   }
   .submenu button.burgir {
