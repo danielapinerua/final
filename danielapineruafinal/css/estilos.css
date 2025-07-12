@@ -1151,6 +1151,7 @@ figcaption{
   .alto {
     width: 85%;
     height: auto;
+    margin: auto;
   }
    
 
@@ -1303,6 +1304,7 @@ p{
     width: 90%;
     padding: 0.5rem;
   }
+  
 
   .cuadromensaje{
     padding: 0.6rem;
