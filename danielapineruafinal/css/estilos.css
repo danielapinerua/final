@@ -1142,6 +1142,7 @@ figcaption{
     .grande {
     width: 85%;
     height: auto;
+    margin: auto;
   }
 
   .grande p{
@@ -1285,8 +1286,8 @@ p{
     height: auto; 
     }
   .grande {
-    width: 90%;
-    padding: 0.6rem;
+    width: 93%;
+    padding: 0.5rem;
   }
 
   .grande p {
