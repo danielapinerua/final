@@ -1008,8 +1008,7 @@ figcaption{
 
 
 
-@media (max-width: 767px) {
-
+@media(max-width: 767px) {
     .titulo{
         font-size: 1.1rem;
     }
@@ -1075,6 +1074,8 @@ figcaption{
   .columna {
     width: 85%;
     padding: 1rem;
+    box-sizing: border-box;
+    margin: auto;
   }
 
   #mapa {
