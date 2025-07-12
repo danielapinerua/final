@@ -93,7 +93,6 @@ text-decoration: none;
 
 #panelhamburguesa{
     height: 100vh;
-    width: 25rem;
     position: fixed;
     top: 10vh;
     right: -1000px;
@@ -106,10 +105,8 @@ text-decoration: none;
     overflow: auto;
     font-size: 1.4rem;
     max-height: 90vh;
-     width: 85vw;
-     max-width: 25rem;
-    
-     
+    width: 85vw;
+   max-width: 25rem;
 }
 
 
@@ -1024,6 +1021,7 @@ figcaption{
   #panelhamburguesa {
     font-size: 1rem;
     top: 8vh;
+    max-height: 92vh;
   }
     .submenu button.burgir {
     font-size: 1rem;
